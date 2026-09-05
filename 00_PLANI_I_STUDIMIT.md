@@ -11,39 +11,45 @@ Ky folder është krijuar duke kaluar nëpër **të gjitha** ligjëratat (21 PDF
 
 ## ⚡ PLANI I SHPEJTË — 5 DITË (Provimi: 10 Shtator)
 
-*Meqë provimi është shumë afër, ky është rendi i prioriteteve bazuar në frekuencën e temave në 7 provimet e kaluara të analizuara (skedari 11). Kjo ZËVENDËSON planin 10-ditor më poshtë për këtë raund — nëse keni më shumë kohë, kthehuni te plani i plotë.*
+*Meqë provimi është shumë afër, ky është rendi i prioriteteve bazuar në frekuencën e temave në **16 provime/kolokviume të kaluara** të analizuara (skedari 11 — 6 nga fotot origjinale + 9 nga materiali shtesë i asistentit). Kjo ZËVENDËSON planin 10-ditor më poshtë për këtë raund — nëse keni më shumë kohë, kthehuni te plani i plotë.*
 
 ### TIER 1 — Duhet t'i dini me çdo kusht (dalin në PRATIKISHT ÇDO provim)
-1. **Analiza e kompleksitetit të fragmenteve kodi** (loops të ndërthurura, rekursion) — skedari 02, §1-2. Praktikoni direkt me fragmentet nga skedari 11 (Exam 2, Exam 3, Exam 6) pa shikuar përgjigjen.
-2. **Master Theorem + relacione rekurence në formë të mbyllur** (back-substitution kur s'aplikohet Master Theorem) — skedari 02 §3 dhe skedari 03 §5-6. Kjo është formulë — mësojeni përmendësh.
+0. **KMP — gjurmim manual hap-pas-hapi** — **PYETJA MË E PËRSËRITUR NGA TË GJITHA (8 nga 16 provime!)**. Nëse mësoni VETËM një gjë nga ky plan, le të jetë kjo. Skedari 07, §3; shembuj shtesë praktikë në skedarin 13, §7 dhe skedarin 07, §6 (fundi).
+1. **Analiza e kompleksitetit të fragmenteve kodi** (loops të ndërthurura, rekursion, dy loops sekuenciale jo të ndërthurura) — skedari 02, §1-2 dhe skedari 13, §6. Praktikoni direkt me fragmentet nga skedari 11 (Exam 2, Exam 3, Exam 6) pa shikuar përgjigjen.
+2. **Master Theorem + relacione rekurence në formë të mbyllur** (back-substitution, ekuacioni karakteristik — rrënjë reale të dallueshme, të përsëritura, rasti jo-homogjen) — skedari 02 §3 dhe skedari 03 §5-7 (6 shembuj shtesë të plotë tani në §7, përfshi një që përputhet saktësisht me një pyetje reale provimi). Kjo është formulë — mësojeni përmendësh.
 3. **Tabela krahasuese e sortimeve** (Shell vs Insertion, Quick vs Merge, si funksionon Heapsort) — skedari 05, §9. Praktikoni t'i shpjegoni këto dallime me fjalë tuaja, jo vetëm t'i lexoni.
-4. **KMP dhe Boyer-Moore** — gjurmim manual hap-pas-hapi (bad character rule, good suffix rule) — skedari 07, §3-4. Praktikoni mbi shembujt konkretë të dhënë në skedarin 11 (Exam 6).
-5. **Kruskal + Prim mbi të njëjtin graf** — skedari 08, §4. Vizatoni një graf të thjeshtë (6-7 nyje) dhe praktikoni të dy algoritmet mbi të njëjtin graf derisa t'ju dalë natyrshëm.
+4. **Boyer-Moore** — bad character rule + good suffix rule, gjurmim manual — skedari 07, §4. Praktikoni mbi shembujt konkretë (skedari 07 §6, skedari 13 §7).
+5. **Kruskal + Prim MBI TË NJËJTIN GRAF** (dhe variacioni **Kruskal + Dijkstra mbi të njëjtin graf** — model tjetër i konfirmuar) — skedari 08, §4-5. Vizatoni një graf të thjeshtë (6-7 nyje) dhe praktikoni algoritmet mbi të njëjtin graf derisa t'ju dalë natyrshëm. **Struktura Union-Find/Partition** që qëndron pas Kruskal-it mund të pyetet veç e veç — pseudokodi i plotë në skedarin 13, §3.
 6. **P, NP, NP-complete, Backtracking** (koncepte, shpjegim me fjalë) — skedari 09, Pjesa II + fundi. Kjo është pikë e lehtë/e shpejtë për t'u mësuar, mos e lini pa e mësuar.
 
 ### TIER 2 — Shumë gjasa të dalin, praktikojini pas Tier 1
-7. **Krahasimi i shpejtësisë së rritjes** (n!, 2ⁿ, n², n log n, gjetja e k minimale për O(nᵏ)) — skedari 02, §4.
-8. **Horner's Method** (implementim) — skedari 06, §1. E shpejtë për t'u mësuar, del shpesh.
+7. **Krahasimi i shpejtësisë së rritjes** (n!, 2ⁿ, n², n log n, gjetja e k minimale për O(nᵏ), renditja e f1..f4) — skedari 02, §4.
+8. **Horner's Method** (implementim, p.sh. mbi 2x³-6x²+2x-1) — skedari 06, §1 dhe skedari 13 §1.6. E shpejtë për t'u mësuar, del shpesh.
 9. **Winograd vs Strassen** (koncepte + krahasim) — skedari 06, §2.
-10. **Probleme kodimi tip "divide-and-conquer"/stringje** (katrori magjik, kllapa të balancuara, anagramet) — praktikoni t'i shkruani nga zeri, jo vetëm t'i lexoni. Shih skedarin 11, Exam 1/Exam 7.
+10. **"Fshirja në O(1)"** (varg i sortuar vs i pasortuar, trade-off) — pyetje konceptuale e konfirmuar në 3 provime — skedari 13, §1.11.
+11. **Majority Element** (Boyer-Moore Voting — algoritmi DETERMINISTIK, jo ai probabilistik!) dhe **Sort Characters By Frequency** — skedari 13, §1.2-1.3.
+12. **Probleme kodimi tip "divide-and-conquer"/stringje** (katrori magjik, kllapa të balancuara, anagramet) — praktikoni t'i shkruani nga zeri, jo vetëm t'i lexoni. Shih skedarin 11, Exam 1/Exam 7.
 
 ### TIER 3 — Nëse ju mbetet kohë
-11. Algoritmi i Euklidit (GCD), numra primar/Sita e Erathostenit — skedari 06, §4.
-12. Probleme LeetCode-style specifike (rrënja katrore pa built-in, perimetri i poligonit, max subarray sum, longest increasing subsequence, 132 pattern) — skedari 11 ka shembuj konkretë me zgjidhje të sugjeruara.
+13. Algoritmi i Euklidit (GCD), numra primar/Sita e Erathostenit — skedari 06, §4.
+14. Probleme LeetCode-style specifike (rrënja katrore pa built-in, perimetri i poligonit, max subarray sum, longest increasing subsequence, 132 pattern, Meeting Rooms II, Maximum Gap/Radix Sort) — skedari 11 dhe skedari 13, §1 kanë shembuj konkretë me zgjidhje të sugjeruara.
+15. **Definimi formal i Big-Ω** (jo vetëm Big-O — pyetje e veçantë e gjetur në Exam 9) — skedari 01, §5.
+16. Algoritmet e Përafrimit (Greedy — TSP, Bin-Packing, Knapsack, Graph Coloring) dhe Algoritmet Probabilistike (Monte Carlo, Las Vegas, Sherwood) — skedari 12. **S'u shfaqën në ASNJË nga 16 provimet e shqyrtuara — prioritet i ulët**, por lexoni konceptet bazë nëse ju mbetet kohë.
 
-### ÇKA TË MOS HUMBNI KOHË (frekuencë e ulët në provimet e shqyrtuara)
+### ÇKA TË MOS HUMBNI KOHË (frekuencë e ulët/zero në provimet e shqyrtuara)
 - Algoritmet paralele (PRAM, kosto/procesorë) — s'u shfaq asnjëherë si pyetje konkrete provimi.
 - Detajet e thelluara të grafeve përtej Kruskal/Prim/Dijkstra (Euler path/circuit, komponentë bikonektuara) — s'u shfaqën në provimet e shqyrtuara.
 - Sorti i Jashtëm Polifazor (external merge sort) — teorik, s'u pa në asnjë provim.
 - Përshtatja e përafërt e stringjeve (DP diffs matrix) — e mundshme por frekuencë e ulët.
 - Ekuacionet lineare (Gauss-Jordan) — teorik, frekuencë e ulët në pyetjet konkrete të gjetura.
+- Algoritmet e Përafrimit dhe Probabilistike (skedari 12) — teorik interesant, por ZERO shfaqje në 16 provimet e shqyrtuara.
 
 ### Orari sugjeruar (5 ditë deri më 10 Shtator)
-- **Sot/Nesër:** Tier 1, pikat 1-2 (kompleksiteti + rekurrenca/Master Theorem) — themeli i gjithçkaje tjetër.
-- **Dita pasnesër:** Tier 1, pikat 3-4 (sortimi + string matching).
-- **Dita e katërt:** Tier 1, pikat 5-6 (grafet + P/NP/Backtracking) + Tier 2, pikat 7-9.
-- **Dita e pestë (para provimit):** Tier 2, pika 10 (praktikë kodimi) + Tier 3 shpejt + rilexim i plotë i skedarit 11 nga fillimi në fund.
-- **Dita e provimit (10 Shtator):** vetëm rishikim i shpejtë i tabelave përmbledhëse (skedari 05 §9, skedari 02 §3) dhe skedarit 11 — mos mësoni material të ri, vetëm konsolidoni.
+- **Sot/Nesër:** KMP (pika 0) + Tier 1, pikat 1-2 (kompleksiteti + rekurrenca/Master Theorem) — themeli i gjithçkaje tjetër.
+- **Dita pasnesër:** Tier 1, pikat 3-4 (sortimi + Boyer-Moore).
+- **Dita e katërt:** Tier 1, pikat 5-6 (grafet/Union-Find + P/NP/Backtracking) + Tier 2, pikat 7-9.
+- **Dita e pestë (para provimit):** Tier 2, pikat 10-12 (fshirja O(1), Majority Element, praktikë kodimi) + Tier 3 shpejt + rilexim i plotë i skedarit 11 nga fillimi në fund.
+- **Dita e provimit (10 Shtator):** vetëm rishikim i shpejtë i tabelave përmbledhëse (skedari 05 §9, skedari 02 §3, skedari 13 §8 — "Template-i Standard i Provimeve") dhe skedarit 11 — mos mësoni material të ri, vetëm konsolidoni.
 
 ---
 
@@ -62,7 +68,7 @@ Ky folder është krijuar duke kaluar nëpër **të gjitha** ligjëratat (21 PDF
 
 ## 2. Formati i Provimeve — çfarë duhet të prisni
 
-Nga shqyrtimi i **6 provimeve/kolokviumeve të kaluara** (Qershor 2023, Shkurt 2024 — dy versione, Nëntor 2024, Maj 2025), formati është shumë i qëndrueshëm:
+Nga shqyrtimi i **16 provimeve/kolokviumeve të kaluara** (6 nga fotot origjinale: Qershor 2023, Shkurt 2024 — dy versione, Nëntor 2024, Maj 2025; plus 9 të tjera nga materiali shtesë i asistentit, disa prej të cilave konfirmuan/plotësuan provimet e para), formati është shumë i qëndrueshëm — shih edhe "Template-i Standard i Provimeve" në skedarin 13, §8:
 
 - **Kohëzgjatja:** 75–90 minuta.
 - **Struktura tipike:** 5–8 "Detyra" (detyra/pyetje), me pikë të ndryshme (1–20 pikë/detyrë).
@@ -161,7 +167,9 @@ Shiko skedarin `10_Ushtrime_te_Praktikuara_dhe_Kodi_Ekzistues.md` për detaje, p
 9. `08_Algoritmet_e_Grafeve.md` — terminologjia, DFS/BFS, MST (Prim/Kruskal), Dijkstra, Euler path/circuit
 10. `09_Algoritmet_Paralele_dhe_NP_Komplete.md` — PRAM, algoritme paralele, P/NP/NP-complete, probleme optimizimi (TSP, knapsack, bin-packing, graph coloring)
 11. `10_Ushtrime_te_Praktikuara_dhe_Kodi_Ekzistues.md` — analizë e kodit tuaj ekzistues Java
-12. `11_Pyetje_nga_Provimet_e_Kaluara.md` — **pyetje verbatim nga 6 provime/kolokviume të kaluara** (2023-2025)
+12. `11_Pyetje_nga_Provimet_e_Kaluara.md` — **pyetje verbatim nga 16 provime/kolokviume të kaluara** (2023-2025), plus tabelë përmbledhëse e llojeve të problemeve që përsëriten
+13. `12_Algoritmet_e_Perafrimit_dhe_Probabilistike.md` — algoritme greedy të përafrimit (TSP, bin-packing, knapsack, graph coloring) dhe algoritme probabilistike (numerike, Monte Carlo, Las Vegas, Sherwood) — material nga teksti shtesë, ZERO shfaqje në provimet e shqyrtuara (prioritet i ulët)
+14. `13_Ushtrime_Shtese_dhe_Banka_Problemeve.md` — bankë ushtrimesh shtesë: probleme LeetCode-style (Majority Element, Sort by Frequency, Horner, Radix/Maximum Gap, fshirja O(1), etj.), pseudokodi i plotë Union-Find, DP e përshtatjes së përafërt, shembuj Radix Sort, dhe "Template-i Standard i Provimeve"
 
 ---
 

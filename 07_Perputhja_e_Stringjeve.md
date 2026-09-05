@@ -140,3 +140,5 @@ BoyerMooreMatch(T, P, Σ)
 | **KMP** | O(m) | O(n) | **O(n+m)** — optimal |
 | **Boyer-Moore** | O(m+alfabet) deri O(m²) | O(n·m) worst, sub-linear praktik | Më i shpejti praktikisht |
 | Approx. Matching (DP) | — | O(S·T) | O(S·T) |
+
+*(Përshtatja e përafërt/Edit Distance është detajuar me shembull dhe rekurrencë të plotë në skedarin 13, §4. Praktika shtesë me modele Bad-Character/Good-Suffix/KMP mbi tekste konkrete gjendet në skedarin 13, §7 dhe në dokumentin origjinal të asistentit "Boyer-Moore and KMP shembuj" — provoni patjetër shembujt: Text `ABABACABABACABACABA` / Pattern `CABACABA` (bad character); Text `ABCDABCXABCDABCXABCDABCXABCDXABCX` / Pattern `ABCXDABCX` (good suffix); Text `AAAAAAAAABAAAAAAAAVBAAAAAAAAABAAAAAAAAB` / Pattern `BAAAAAAAAB` (KMP).)*

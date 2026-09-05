@@ -62,7 +62,7 @@ for each edge (u,v) in order do
     add edge to MST; Union(u,v)
 ```
 - **Kompleksiteti: O(E log E)** (i përcaktuar nga sortimi i degëve).
-- Struktura **Union-Find (Partition)**: `Parent[]`, `FindRoot()` (ngjitet te rrënja), `Union()` (bashkon të voglin te i madhi).
+- Struktura **Union-Find (Partition)**: `Parent[]`, `FindRoot()` (ngjitet te rrënja), `Union()` (bashkon të voglin te i madhi). **Pseudokodi i plotë (me trukun e vlerave negative për madhësinë e komponentit) është në skedarin 13, §3** — kjo strukturë qëndron pas çdo implementimi real të Kruskal-it dhe mund të pyetet veç e veç.
 
 ⚠️ **MST NUK jep domosdo shtegun më të shkurtër mes 2 nyjesh** — mund të "flijojë" një degë të shtrenjtë duke krijuar shteg më të gjatë mes disa çifteve specifike.
 

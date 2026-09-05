@@ -1,6 +1,6 @@
 # 11 — Pyetje nga Provimet e Kaluara (Bankë Pyetjesh, 2023-2025)
 
-*Ky skedar përmban pyetje **verbatim** (të transkriptuara nga fotot e provimeve në folderin "Afate") nga 6 sesione provimesh të ndryshme. Ky ËSHTË dokumenti më i vlefshëm për përgatitje — praktikoni çdo problem më poshtë pa parë zgjidhjen fillimisht, pastaj kontrolloni kundrejt skedarëve 01-09.*
+*Ky skedar përmban pyetje **verbatim** nga **15 sesione provimesh/kolokviumesh** të ndryshme (2020-2025) — 6 nga fotot origjinale në folderin "Afate", plus 9 të tjera nga materiali shtesë i asistentit (folderi "drive-download..."). Ky ËSHTË dokumenti më i vlefshëm për përgatitje — praktikoni çdo problem më poshtë pa parë zgjidhjen fillimisht, pastaj kontrolloni kundrejt skedarëve 01-13.*
 
 **Shënim:** disa foto ishin të errëta/të fokusuara dobët (veçanërisht grafët e dorëshkruar) — kontrolloni fotot origjinale në folderin "Afate" për detaje të sakta numerike të grafëve, sepse OCR-i manual mund të mos jetë 100% i saktë për diagramet.
 
@@ -267,32 +267,108 @@ int fun(int n) {
 
 ---
 
+## EXAM 8: Provimi_DAA_Janar2021 (75 minuta)
+- **Detyra 1. [20p]** a) Analiza kohore e algoritmit që gjen vlerën maksimale + verifikim korrektësie (15p). b) Definoni Big-O, me graf (5p).
+- **Detyra 2. [20p]** V=[2,3,7,10,90]: a) pseudokod kërkim sekuencial (5p) b) hapat kërkim binar për 90 + parakushti (10p) c) kompleksiteti i kërkimit binar (5p).
+- **Detyra 3. [10p]** Avantazhet e Insertion Sort, QuickSort, HeapSort, MergeSort — rasti më i mirë/keq.
+- **Detyra 4. [30p] — Grafet dhe kërkimi në stringje:** a) Kruskal → PSHM për grafin e dhënë. b) KMP: gjeni përputhjen e mostrës "AAAAB" në stringun "AAAAAAAAAAAAAAAAB".
+- **Detyra 5. [20p]** Shpjegoni P, NP, NP-complete, dhe algoritmin Backtracking.
+
+## EXAM 9: Provimi_DAA_Nentor2020 (75 minuta)
+Struktura identike me Exam 8 (Detyra 1-3), por:
+- **Detyra 4. [30p] — Grafet dhe pemët:** a) Kruskal → PSHM. b) **Dijkstra**: shtegu më i shkurtër prej nyjes 1 te të gjitha nyjet tjera, për të NJËJTIN graf.
+- **Detrya 5. [20p]** Kompleksiteti kohor për 2 funksione të dhëna (grafika e kodit s'u nxor nga skanimi — kontrolloni origjinalin nëse e keni).
+
+## EXAM 10: Provimi_DAA_Qershor-2 (75 minuta)
+Struktura e njëjtë Detyra 1-2, por:
+- **Detyra 3. [10p]** *(skenari i bibliotekës)*: Keni koleksion librash pothuajse të renditur, me 1 libër në vend të gabuar. Cilin algoritëm aplikoni: a.Insertion b.Merge c.Radix d.Heap? *(Përgjigje: Insertion Sort — afrohet te rasti më i mirë O(n) për listë pothuajse të sortuar.)*
+- **Detyra 4. [30p]:** a) Kruskal → PSHM. b) **Dijkstra** shtegu më i shkurtër, nyja 1, i njëjti graf.
+- **Detrya 5. [20p]** Kompleksiteti kohor për 2 funksione (grafika mungon nga skanimi).
+
+## EXAM 11: Provimi_DAA_Shtator-1 (75 minuta)
+- **Detyra 1. [20p]** a) Renditja e trendit të rritjes për f1=2ⁿ, f2=n^(3/2), f3=n log n, f4=n^(log n) — MC me 4 opsione (15p). b) Definoni **Big O** (5p).
+- **Detyra 2. [20p]** V=[2,3,7,10,92,55] *(shënim: OCR-i origjinal tregon "92. 55" — mund të jetë artefakt skanimi i dy vlerave 92 dhe 55, kontrolloni origjinalin)*: a) pseudokod kërkim sekuencial (5p). b) hapat kërkim binar për 92 (10p). c) **Cila është zgjidhja e relacionit të rekurrencës: an = -an-1 + 4an-2 + 4an-3, me a0=8, a1=6 dhe a2=26?** (5p) — *(⭐ ky është saktësisht Shembulli 2 i skedarit 03 §7 — përgjigja: an = 2·(-1)ⁿ + (-2)ⁿ + 5·2ⁿ)*
+- **Detyra 3. [10p]** Avantazhet e Insertion/Quick/Heap/MergeSort.
+- **Detyra 4. [30p]:** a) Kruskal → PSHM. b) KMP: "AAAAB" në "AAAAAAAAAAAAAAAAB".
+- **Detrya 5. [20p]** a) Kompleksiteti fun() (grafika mungon). b) Përshkruani si të implementohet, ashtu që fshirja e elementit të i-të (i) në varg të pasortuar, dhe (ii) në varg të sortuar (duke ruajtur sortimin), të mos varet nga madhësia n. *(Shih skedarin 13, §1.11 për diskutimin e plotë.)*
+
+## EXAM 12: Provimi_DAA_Shtator2021 (75 minuta)
+- **Detyra 1. [20p]** a) max+BigO analizë (15p). b) Definoni **Big Omega (Ω)** — *(shënim: ndryshe nga shumica e provimeve që kërkojnë Big-O, ky kërkon Ω — mos supozoni gjithmonë O!)* (5p).
+- **Detyra 2. [20p]** V=[2,3,7,10,20], target=20 — sekuencial + binar + kompleksiteti.
+- **Detyra 3. [10p]** *(varg me veti k-distancë)*: çdo element ka distancë maksimale k nga pozicioni i sortuar. Cili algoritëm modifikohet lehtë për ta sortuar, dhe kompleksiteti? a. Insertion O(kn) b. Heap O(nLogk) c. Quick O(kLogk) d. Merge O(kLogk) — *(përgjigje e sugjeruar: **Heap Sort me O(n log k)**, duke përdorur një min-heap të madhësisë k+1 — teknikë klasike "sort a nearly-sorted/k-sorted array".)*
+- **Detyra 4. [30p]:** a) Kruskal → PSHM. b) **Dijkstra** shtegu më i shkurtër, i njëjti graf.
+- **Detrya 5. [20p]** a) Kompleksiteti `fun()` me `for(i=n;i>0;i/=2) for(j=0;j<i;j++)` → **O(n)**. b) Kompleksiteti `fun()` me `for(i=0;i<n;i++) for(j=i;j>0;j--)` → **O(n²)**. c) Cila shprehje NUK është O(n²): (15^10)·n+12099 / n^1.98 / **n³/√n** ← kjo / (2^20)·n.
+
+## EXAM 13: DAA — Kolokviumi 1 — 2023 (PDF, 90 minuta)
+- **Detyra 1. [5p]** Dijkstra: shtegu më i shkurtër prej nyjes 1 te të gjitha nyjet, + kompleksiteti.
+- **Detyra 2. [10p]** a) Kruskal → PSHM + kompleksiteti. b) **Prim** → PSHM për TË NJËJTIN graf (2a) + kompleksiteti.
+- **Detrya 3. [4p]** P, NP, NP-complete + Backtracking.
+- **Detrya 4. [7p]** a) Bad character rule + good suffix rule (koncepte). b) Zbatim mbi Text: `GTTATAGCTGATCGCGGCGTAGCGGCGAA`, Pattern: `GTAGCGGCG`. c) KMP: "AAAAB" në "AAAAAAAAAAAAAAAAB".
+- **Detrya 5. [4p]** Kodi për vlerësim polinomi (Horner): vlerësoni **2x³ - 6x² + 2x - 1** për **x=3** + kompleksiteti. *(Zgjidhje: 2(27)-6(9)+2(3)-1 = 54-54+6-1 = **5**.)*
+
+## EXAM 14: DAA — Kolokviumi 2 — 2023 (PDF, 90 minuta)
+- **1. [8p]** *(reasoning i kërkuar!)* Zgjidhni algoritmin më të përshtatshëm + arsyetoni pse: diferenca maksimale mes elementeve fqinje pas sortimit. `[9,18,27,3]`→`9`. *(Përgjigje: **Radix Sort**, sepse arrin O(n) pa krahasime — nëse çelësat janë numra të plotë me gamë të kufizuar.)*
+- **2. [7p]** **Elementi i Shumicës** (Majority Element): elementi që shfaqet >⌊n/2⌋ herë. *(Shih skedarin 13, §1.3 — Algoritmi i Votimit Boyer-Moore, O(n)/O(1).)*
+- **3. [5p]** Avantazhet Bubble/Quick/Heap/Radix/MergeSort — best/worst case.
+- **4. [15p]** **Sort Characters By Frequency**: rendit karakteret zbritës sipas frekuencës. `"tree"`→`"eert"`. *(Shih skedarin 13, §1.2 — vini re kujdesin: "cacaca" është e pasaktë!)*
+- **5. [7p]** Kruskal → PSHM + kompleksiteti.
+- **6. [8p]** Prim → PSHM për grafin e detyrës 5 + kompleksiteti.
+- **7. [10p]** Bad-character/good-suffix + zbatim (i njëjti Text/Pattern si Exam 13) + KMP "AAAAB"/"AAAA...B".
+
+## EXAM 15: DAA — Provimi — Janar 2024 / EN_Provimi_DAA_Janar2024 (PDF, versione shqip DHE anglisht, 90 minuta, "DAA Shkurt 2024")
+*(Kjo është E NJËJTA provim si "EXAM 6" (Shkurt 2024) e dokumentuar më lart nga fotot — tani e kemi të konfirmuar fjalë-për-fjalë, në 2 gjuhë, që vërteton saktësinë e transkriptimit të mëparshëm nga imazhe.)*
+- **Q1./Detyra 1. [10p]** Rrënja katrore floor pa built-in.
+- **Q2./Detyra 2. [15p]** Perimetri më i madh i poligonit.
+- **Q3./Detyra 3. [5p]** Kruskal → PSHM + kompleksiteti.
+- **Q4./Detyra 4. [7p]** Prim → PSHM (i njëjti graf si Q3) + kompleksiteti.
+- **Q5./Detyra 5. [8p]** Bad-character/good-suffix (Text: `GTTATAGCTGATCGCGGCGTAGCGGCGAA`, Pattern: `GTAGCGGCG`) + KMP "AAAAB"/"AAAA...B".
+- **Q6./Detyra 6. [6p]** a) `fun()` me i/=2 nested → O(n). b) `fun()` me i++/j-- nested → O(n²). c) Cila NUK është O(n²) → n³/√n.
+- **Q7./Detyra 7. [4p]** Horner's Method (implementim i përgjithshëm).
+- **Q8./Detrya 8. [5p]** P, NP, NP-complete + Backtracking.
+
+## EXAM 16: Provimi_DAA_Nentor2024 (variant tjetër/më i plotë i Exam 1, 90 minuta)
+*(Ky dokument përmban të njëjtat Detyra 1-5 si "EXAM 1" më lart, POR shton edhe Detyra 6-7 që s'ishin të dukshme në foto — pra ky ËSHTË po ai provim (Kolokviumi 1, 20 Nëntor 2024), vetëm më i plotë. Detyra 1-5 identike (growth funcs/T(n) speedup/min k/anagram/valid parens) — SHTESAT E REJA:)*
+- **Detyra 6. [15p]** a) Kruskal → PSHM. b) KMP: "AAAAB" në "AAAAAAAAAAAAAAAAB".
+- **Detrya 7. [10p]** a) Kompleksiteti i `fun()` (5p). b) Përshkruani si operacionet vijuese në varg të mos varen nga n: (i) fshirja e elementit të i-të pa kërkesë renditjeje, (ii) fshirja e elementit të i-të duke ruajtur sortimin (5p). *(Shih skedarin 13, §1.11.)*
+
+---
+
 ## Përmbledhje: Llojet e Problemeve që Përsëriten (praktikoni secilën!)
 
 | Lloji i Problemit | Shfaqet në | Zgjidhje/Referencë |
 |---|---|---|
-| Katrori Magjik (Divide & Conquer) | Exam 1, Exam 7 | Skedari 01, §7 |
-| Grupimi i Anagrameve | Exam 1 | Hashing/sortim i shkronjave si çelës |
-| Kllapa të Balancuara (Valid Parentheses) | Exam 1, Exam 7 | Stack-based |
-| Krahasimi i shpejtësisë së rritjes (n!, 2ⁿ, etj.) | Exam 1 | Skedari 02, §4 |
+| Katrori Magjik (Divide & Conquer) | Exam 1, Exam 7, Exam 16 | Skedari 01, §7 |
+| Grupimi i Anagrameve | Exam 1, Exam 16 | Hashing/sortim i shkronjave si çelës |
+| Kllapa të Balancuara (Valid Parentheses) | Exam 1, Exam 7, Exam 16 | Stack-based |
+| Krahasimi i shpejtësisë së rritjes (n!, 2ⁿ, etj.) | Exam 1, Exam 16 | Skedari 02, §4 |
+| Renditja e f1..f4 sipas rritjes (2ⁿ, n^1.5, nlogn, n^logn) — MC | Exam 11, Exam 12 | Skedari 02, §4 |
 | Rasti mesatar Θ për kod të dhënë | Exam 1 | Skedari 02, §1 |
-| Vlera minimale k, O(nᵏ) | Exam 1, Exam 6 | Skedari 02, §6 |
-| Rekurrenca në formë të mbyllur | Exam 1 | Skedari 03, §5 |
-| Analiza e kompleksitetit të fragmenteve kodi (bubble/insertion/quicksort/binary search) | Exam 2, Exam 3, Exam 6 | Skedarët 02, 05 |
-| Krahasime teorike sortesh (Shell/Insertion, Quick/Merge, Heap) | Exam 3, Exam 5 | Skedari 05, §9 |
+| Vlera minimale k, O(nᵏ) | Exam 1, Exam 6, Exam 16 | Skedari 02, §6 |
+| Rekurrenca në formë të mbyllur (back-substitution) | Exam 1 | Skedari 03, §5 |
+| Zgjidhja e rekurrencës me ekuacion karakteristik (an=-an-1+4an-2+4an-3) | Exam 11 | Skedari 03, §7, Shembulli 2 |
+| Analiza e kompleksitetit të fragmenteve kodi (bubble/insertion/quicksort/binary search/nested loops) | Exam 2, Exam 3, Exam 6, Exam 9, Exam 10, Exam 12, Exam 16 | Skedarët 02, 05 |
+| Krahasime teorike sortesh (Shell/Insertion, Quick/Merge, Heap) | Exam 3, Exam 5, Exam 8, Exam 12, Exam 14 | Skedari 05, §9 |
 | Maximum Subarray Sum | Exam 3 | Kadane's Algorithm |
 | Longest Increasing Subsequence | Exam 3 | DP O(n²) ose O(n log n) |
 | Parsimi i Formulës Kimike (Number of Atoms) | Exam 4 | Parsim rekursiv/stack |
-| Radix Sort (aplikim praktik) | Exam 5 | Skedari 05, §4 |
-| Kërkimi Sekuencial/Binar (pseudokod + kompleksitet) | Exam 5, Exam 1 | Skedari 04 |
-| Zgjedhja e algoritmit të duhur sipas skenarit (libri i vendit të gabuar) | Exam 5 | Njohuri e thellë e karakteristikave të sorteve |
+| Radix Sort — diferenca maksimale mes fqinjëve (Maximum Gap) | Exam 5, Exam 14 | Skedari 05, §4; Skedari 13, §1.7 |
+| Elementi i Shumicës (Majority Element) | Exam 14 | Boyer-Moore Voting, skedari 13 §1.3 |
+| Rendit Karakteret sipas Frekuencës (Sort Chars By Frequency) | Exam 14 | Skedari 13, §1.2 |
+| Kërkimi Sekuencial/Binar (pseudokod + kompleksitet) | Exam 5, Exam 1, Exam 8-12 (të gjitha) | Skedari 04 |
+| Zgjedhja e algoritmit të duhur sipas skenarit (libri i vendit të gabuar) | Exam 5, Exam 10 | Njohuri e thellë e karakteristikave të sorteve |
+| Varg me veti k-distancë — cili sort modifikohet | Exam 12 | Heap Sort me min-heap madhësi k+1, O(n log k) |
 | 132 Pattern (array) | Exam 5 | Monotonic stack O(n) |
-| Rrënja Katrore pa built-in (Floor Sqrt) | Exam 6 | Kërkim binar mbi hapësirën e përgjigjeve |
-| Perimetri më i madh i Poligonit | Exam 6 | Sortim + greedy nga fundi |
-| Kruskal + Prim mbi të njëjtin graf | Exam 6 | Skedari 08, §4 |
-| Bad Character Rule / Good Suffix Rule (Boyer-Moore) | Exam 6 | Skedari 07, §4 |
-| KMP aplikim manual | Exam 6 | Skedari 07, §3 |
-| Horner's Method (implementim) | Exam 6, Exam 7 (indirekt via T(n)) | Skedari 06, §1 |
+| Rrënja Katrore pa built-in (Floor Sqrt) | Exam 6, Exam 15 | Kërkim binar mbi hapësirën e përgjigjeve |
+| Perimetri më i madh i Poligonit | Exam 6, Exam 15 | Sortim + greedy nga fundi |
+| Kruskal + Prim mbi të njëjtin graf | Exam 6, Exam 13, Exam 14, Exam 15 | Skedari 08, §4 |
+| Kruskal + Dijkstra mbi të njëjtin graf | Exam 9, Exam 10, Exam 12 | Skedari 08, §4-5 |
+| Kruskal + KMP (jo graf i njëjtë, dy pyetje të pavarura) | Exam 8, Exam 11, Exam 12, Exam 16 | Skedarët 07-08 |
+| Dijkstra vetëm (shteg më i shkurtër) | Exam 13 | Skedari 08, §5 |
+| Bad Character Rule / Good Suffix Rule (Boyer-Moore) | Exam 6, Exam 13, Exam 14, Exam 15 | Skedari 07, §4 |
+| KMP aplikim manual ("AAAAB" në "AAAA...B") | Exam 6, Exam 8, Exam 11, Exam 12, Exam 13, Exam 14, Exam 15, Exam 16 | Skedari 07, §3 — **PYETJA MË E PËRSËRITUR NGA TË GJITHA!** |
+| Horner's Method (implementim) | Exam 6, Exam 7, Exam 13, Exam 15 | Skedari 06, §1 |
+| Fshirja në O(1) (varg i sortuar vs i pasortuar) | Exam 9, Exam 11, Exam 16 | Skedari 13, §1.11 |
+| Definimi Big-Ω (jo vetëm Big-O!) | Exam 9 | Skedari 01, §5 |
 | P, NP, NP-complete, Backtracking (koncepte) | Exam 6 | Skedari 09, Pjesa II |
 | Winograd vs Strassen | Exam 7 | Skedari 06, §2 |
 | Rritja eksponenciale + shpejtësia e re e makinës | Exam 7 | Algjebër me fuqi të 2-shit |

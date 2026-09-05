@@ -101,3 +101,84 @@ Thjeshto dhe merr formën e mbyllur në funksion vetëm të n (**pa T() në të 
 - Σ(i=1..n) i = n(n+1)/2
 - Σ(i=0..n) 2ⁱ = 2^(n+1) - 1
 - Numri i artë (golden ratio): φ = (1+√5)/2 ≈ 1.618
+
+---
+
+## 7. Shtojcë: 6 Shembuj Shtesë të Plotë (nga materiali i asistentit) — PRAKTIKOJINI!
+
+*Këto janë nxjerrë nga një ligjëratë shtesë "Relacionet e Rekurrencës" (49 slide). I rëndësishëm: shembulli #2 (an=-an-1+4an-2+4an-3) është KONFIRMUAR si pyetje reale provimi (Provimi_DAA_Qershor-2, Detyra 2c — atje me a0=8, a1=6, a2=26 saktësisht si këtu)!*
+
+### Shembulli 1 — Rrënjë reale të dallueshme (shkallë 2)
+`an = an-1 + 2an-2`, `a0=2, a1=7`
+```
+Ekuacioni karakteristik: r² - r - 2 = 0 → (r+1)(r-2)=0 → r1=2, r2=-1
+Zgjidhja e përgjithshme: an = α1·2ⁿ + α2·(-1)ⁿ
+a0: α1+α2=2
+a1: 2α1-α2=7
+⟹ α1=3, α2=-1
+```
+**Përgjigja: an = 3·2ⁿ - (-1)ⁿ**
+
+### Shembulli 2 — Rrënjë reale të dallueshme (shkallë 3) — ⭐ KONFIRMUAR NË PROVIM
+`an = -an-1 + 4an-2 + 4an-3`, `a0=8, a1=6, a2=26`
+```
+Ekuacioni karakteristik: r³+r²-4r-4=0 → (r+1)(r+2)(r-2)=0 → r1=-1, r2=-2, r3=2
+Zgjidhja e përgjithshme: an = α1(-1)ⁿ + α2(-2)ⁿ + α3·2ⁿ
+Sistemi:
+a0: α1+α2+α3=8
+a1: -α1-2α2+2α3=6
+a2: α1+4α2+4α3=26
+⟹ α1=2, α2=1, α3=5
+```
+**Përgjigja: an = 2·(-1)ⁿ + (-2)ⁿ + 5·2ⁿ**
+
+### Shembulli 3 — Rrënjë e përsëritur, shumëfishmëri 2
+`an = 6an-1 - 9an-2`, `a0=1, a1=6`
+```
+Ekuacioni karakteristik: r²-6r+9=0 → (r-3)²=0 → r=3, shumëfishmëri 2
+Zgjidhja: an = (β0+β1·n)·3ⁿ
+a0: β0=1
+a1: 3β0+3β1=6 ⟹ β1=1
+```
+**Përgjigja: an = 3ⁿ + n·3ⁿ**
+
+### Shembulli 4 — Rrënjë e përsëritur, shumëfishmëri 3
+`an = -3an-1 - 3an-2 - an-3`, `a0=1, a1=-2, a2=-1`
+```
+Ekuacioni karakteristik: r³+3r²+3r+1=0 → (r+1)³=0 → r=-1, shumëfishmëri 3
+Zgjidhja: an = (β0+β1·n+β2·n²)(-1)ⁿ
+Sistemi ⟹ β0=1, β1=3, β2=-2
+```
+**Përgjigja: an = (1+3n-2n²)(-1)ⁿ**
+
+### Shembulli 5 — Dy rrënjë të përsëritura (shkallë 4)
+`an = 8an-2 - 16an-4` (n≥4), `a0=1, a1=4, a2=28, a3=32`
+```
+Ekuacioni karakteristik: r⁴-8r²+16=0 → (r²-4)²=(r-2)²(r+2)²=0 → r1=2, r2=-2, secila shumëfishmëri 2
+Zgjidhja: an = (β10+β11·n)·2ⁿ + (β20+β21·n)·(-2)ⁿ
+Sistemi ⟹ β10=1, β11=2, β20=0, β21=1
+```
+**Përgjigja: an = (1+2n)·2ⁿ + n·(-2)ⁿ**
+
+### Shembulli 6 — Jo-homogjene, f(n) eksponenciale që përputhet me rrënjë homogjene
+`an = 2an-1 - an-2 + 2ⁿ`, `a0=1, a1=2`
+```
+Hapi 1 — zgjidhja e veçantë bn: provo bn=c·2ⁿ (por 2 s'përputhet me rrënjën homogjene r=1, kështu
+   që s'nevojitet faktor shtesë n këtu — provo direkt):
+   c·2ⁿ = 2(c·2ⁿ⁻¹) - c·2ⁿ⁻² + 2ⁿ ⟹ zgjidh për c ⟹ c=4
+   bn = 4·2ⁿ
+
+Hapi 2 — zgjidhja homogjene hn: hn=2hn-1-hn-2 → r²-2r+1=0 → (r-1)²=0 → r=1 (shumëfishmëri 2)
+   hn = β1 + β2·n
+
+Hapi 3 — kombino dhe përshtat kushtet fillestare: an = 4·2ⁿ + β1 + β2·n
+   a0: 4+β1=1 ⟹ β1=-3
+   a1: 8+β1+β2=2 ⟹ β2=-3
+```
+**Përgjigja: an = 4·2ⁿ - 3n - 3** (verifikohet: a0=4-0-3=1 ✓, a1=8-3-3=2 ✓)
+
+### Teoremat Formale (referuara si "Teorema 1-4" në disa ligjërata/provime)
+- **Teorema (kombinim linear)**: nëse disa sekuenca plotësojnë një rekurrencë lineare homogjene, çdo **kombinim linear** i tyre gjithashtu e plotëson.
+- **Teorema 2**: `r` është rrënjë e ekuacionit karakteristik **atëherë dhe vetëm atëherë** kur `rⁿ` plotëson rekurrencën.
+- **Teorema 3 (rrënjë e përsëritur)**: nëse `r1` shfaqet me shumëfishmëri `m+1` te ekuacioni karakteristik, atëherë jo vetëm `r1ⁿ`, por edhe `n·r1ⁿ, n²·r1ⁿ, ..., nᵐ·r1ⁿ` janë secila zgjidhje — prandaj forma `(β0+β1n+...+βmnᵐ)r1ⁿ`.
+- **Teorema 4 (struktura jo-homogjene)**: nëse `bn` plotëson rekurrencën jo-homogjene, atëherë `an` e plotëson **atëherë dhe vetëm atëherë** kur `hn=an-bn` plotëson rekurrencën homogjene përkatëse. Prandaj: **an = bn + hn**.
