@@ -9,6 +9,44 @@ Ky folder është krijuar duke kaluar nëpër **të gjitha** ligjëratat (21 PDF
 
 ---
 
+## ⚡ PLANI I SHPEJTË — 5 DITË (Provimi: 10 Shtator)
+
+*Meqë provimi është shumë afër, ky është rendi i prioriteteve bazuar në frekuencën e temave në 7 provimet e kaluara të analizuara (skedari 11). Kjo ZËVENDËSON planin 10-ditor më poshtë për këtë raund — nëse keni më shumë kohë, kthehuni te plani i plotë.*
+
+### TIER 1 — Duhet t'i dini me çdo kusht (dalin në PRATIKISHT ÇDO provim)
+1. **Analiza e kompleksitetit të fragmenteve kodi** (loops të ndërthurura, rekursion) — skedari 02, §1-2. Praktikoni direkt me fragmentet nga skedari 11 (Exam 2, Exam 3, Exam 6) pa shikuar përgjigjen.
+2. **Master Theorem + relacione rekurence në formë të mbyllur** (back-substitution kur s'aplikohet Master Theorem) — skedari 02 §3 dhe skedari 03 §5-6. Kjo është formulë — mësojeni përmendësh.
+3. **Tabela krahasuese e sortimeve** (Shell vs Insertion, Quick vs Merge, si funksionon Heapsort) — skedari 05, §9. Praktikoni t'i shpjegoni këto dallime me fjalë tuaja, jo vetëm t'i lexoni.
+4. **KMP dhe Boyer-Moore** — gjurmim manual hap-pas-hapi (bad character rule, good suffix rule) — skedari 07, §3-4. Praktikoni mbi shembujt konkretë të dhënë në skedarin 11 (Exam 6).
+5. **Kruskal + Prim mbi të njëjtin graf** — skedari 08, §4. Vizatoni një graf të thjeshtë (6-7 nyje) dhe praktikoni të dy algoritmet mbi të njëjtin graf derisa t'ju dalë natyrshëm.
+6. **P, NP, NP-complete, Backtracking** (koncepte, shpjegim me fjalë) — skedari 09, Pjesa II + fundi. Kjo është pikë e lehtë/e shpejtë për t'u mësuar, mos e lini pa e mësuar.
+
+### TIER 2 — Shumë gjasa të dalin, praktikojini pas Tier 1
+7. **Krahasimi i shpejtësisë së rritjes** (n!, 2ⁿ, n², n log n, gjetja e k minimale për O(nᵏ)) — skedari 02, §4.
+8. **Horner's Method** (implementim) — skedari 06, §1. E shpejtë për t'u mësuar, del shpesh.
+9. **Winograd vs Strassen** (koncepte + krahasim) — skedari 06, §2.
+10. **Probleme kodimi tip "divide-and-conquer"/stringje** (katrori magjik, kllapa të balancuara, anagramet) — praktikoni t'i shkruani nga zeri, jo vetëm t'i lexoni. Shih skedarin 11, Exam 1/Exam 7.
+
+### TIER 3 — Nëse ju mbetet kohë
+11. Algoritmi i Euklidit (GCD), numra primar/Sita e Erathostenit — skedari 06, §4.
+12. Probleme LeetCode-style specifike (rrënja katrore pa built-in, perimetri i poligonit, max subarray sum, longest increasing subsequence, 132 pattern) — skedari 11 ka shembuj konkretë me zgjidhje të sugjeruara.
+
+### ÇKA TË MOS HUMBNI KOHË (frekuencë e ulët në provimet e shqyrtuara)
+- Algoritmet paralele (PRAM, kosto/procesorë) — s'u shfaq asnjëherë si pyetje konkrete provimi.
+- Detajet e thelluara të grafeve përtej Kruskal/Prim/Dijkstra (Euler path/circuit, komponentë bikonektuara) — s'u shfaqën në provimet e shqyrtuara.
+- Sorti i Jashtëm Polifazor (external merge sort) — teorik, s'u pa në asnjë provim.
+- Përshtatja e përafërt e stringjeve (DP diffs matrix) — e mundshme por frekuencë e ulët.
+- Ekuacionet lineare (Gauss-Jordan) — teorik, frekuencë e ulët në pyetjet konkrete të gjetura.
+
+### Orari sugjeruar (5 ditë deri më 10 Shtator)
+- **Sot/Nesër:** Tier 1, pikat 1-2 (kompleksiteti + rekurrenca/Master Theorem) — themeli i gjithçkaje tjetër.
+- **Dita pasnesër:** Tier 1, pikat 3-4 (sortimi + string matching).
+- **Dita e katërt:** Tier 1, pikat 5-6 (grafet + P/NP/Backtracking) + Tier 2, pikat 7-9.
+- **Dita e pestë (para provimit):** Tier 2, pika 10 (praktikë kodimi) + Tier 3 shpejt + rilexim i plotë i skedarit 11 nga fillimi në fund.
+- **Dita e provimit (10 Shtator):** vetëm rishikim i shpejtë i tabelave përmbledhëse (skedari 05 §9, skedari 02 §3) dhe skedarit 11 — mos mësoni material të ri, vetëm konsolidoni.
+
+---
+
 ## 1. Struktura e Notimit (nga syllabusi zyrtar)
 
 | Komponenti | Pesha |
