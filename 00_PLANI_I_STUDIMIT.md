@@ -170,6 +170,7 @@ Shiko skedarin `10_Ushtrime_te_Praktikuara_dhe_Kodi_Ekzistues.md` për detaje, p
 12. `11_Pyetje_nga_Provimet_e_Kaluara.md` — **pyetje verbatim nga 16 provime/kolokviume të kaluara** (2023-2025), plus tabelë përmbledhëse e llojeve të problemeve që përsëriten
 13. `12_Algoritmet_e_Perafrimit_dhe_Probabilistike.md` — algoritme greedy të përafrimit (TSP, bin-packing, knapsack, graph coloring) dhe algoritme probabilistike (numerike, Monte Carlo, Las Vegas, Sherwood) — material nga teksti shtesë, ZERO shfaqje në provimet e shqyrtuara (prioritet i ulët)
 14. `13_Ushtrime_Shtese_dhe_Banka_Problemeve.md` — bankë ushtrimesh shtesë: probleme LeetCode-style (Majority Element, Sort by Frequency, Horner, Radix/Maximum Gap, fshirja O(1), etj.), pseudokodi i plotë Union-Find, DP e përshtatjes së përafërt, shembuj Radix Sort, dhe "Template-i Standard i Provimeve"
+15. `14_Zgjidhjet_e_Plota_te_Provimeve.md` — **përgjigje dhe zgjidhje të PLOTA, me shpjecime dhe kod JavaScript**, për ÇDO pyetje të skedarit 11 (16 provime) — teknikat e përbashkëta (KMP, Boyer-Moore, Kruskal/Prim/Dijkstra, kërkimi, Horner, sortet, P/NP) shpjegohen një herë në "Pjesën A", dhe çdo provim specifik në "Pjesën B" i referohet asaj
 
 ---
 
